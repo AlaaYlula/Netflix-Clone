@@ -17,7 +17,7 @@ function Movie({ movie },{key}) {
 
                         <Col  key={key} md={4}>
                             <Card className='div-card'>
-                                {/* <Card.Img className='div-card-img' variant="top" src={movie.poster_path} /> */}
+                                <Card.Img className='div-card-img' variant="top" src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} />
                                 <Card.Body>
                                     <Card.Title className='div-card-title'>{movie.title}</Card.Title>
                                     movie overview : {movie.overview}
