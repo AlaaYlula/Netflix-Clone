@@ -9,7 +9,7 @@ function Navbar1 () {
     <Navbar.Brand to="/">Movies</Navbar.Brand>
     <Nav className="me-auto">
       <Link className='link' to="/">Home</Link>
-      {/* <Link className='link' to="/favorite">Favorite</Link> */}
+      <Link className='link' to="/favorite">   Favorite</Link>
     </Nav>
     </Container>
   </Navbar>

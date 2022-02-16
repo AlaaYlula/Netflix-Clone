@@ -20,14 +20,9 @@ function Movie({ movie },{key}) {
                                 <Card.Img className='div-card-img' variant="top" src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} />
                                 <Card.Body>
                                     <Card.Title className='div-card-title'>{movie.title}</Card.Title>
-                                    movie overview : {movie.overview}
-                                    <br></br>
-                                    {/* vote_count : {movie.vote_count}
-                                    <br></br>
-                                    vote average : {movie.vote_average}
-                                    <br></br> */}
-                                    release_date : {movie.release_date}
-                                    <br></br>
+                                    <Card.Text >movie overview : {movie.overview}</Card.Text>
+                                    <Card.Text >release_date : {movie.release_date}</Card.Text>
+
                                     <div>
                                         <Button className='div-card-button' variant="primary" onClick={()=>{
                                                 setMovieInfo(movie)
